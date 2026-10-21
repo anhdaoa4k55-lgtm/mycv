@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV - Vũ Anh Đào</title>
+  <style>
+    :root {
+      --primary: #1e3a8a;
+      --primary-light: #eff6ff;
+      --secondary: #0d9488;
+      --text-main: #1f2937;
+      --text-muted: #4b5563;
+      --border-color: #e5e7eb;
+      --bg-page: #f8fafc;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.5;
+      color: var(--text-main);
+      background-color: var(--bg-page);
+      padding: 24px 12px;
+    }
+
+    .cv-container {
+      max-width: 850px;
+      margin: 0 auto;
+      background: #ffffff;
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+      overflow: hidden;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1e3a8a, #1e40af);
+      color: #ffffff;
+      padding: 36px 32px 28px;
+    }
+
+    .header-name {
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      margin-bottom: 6px;
+      text-transform: uppercase;
+    }
+
+    .header-role {
+      font-size: 16px;
+      font-weight: 400;
+      color: #bfdbfe;
+      margin-bottom: 16px;
+    }
+
+    .contact-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px 24px;
+      font-size: 14px;
+      color: #e2e8f0;
+      border-top: 1px solid rgba(255, 255, 255, 0.15);
+      padding-top: 16px;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .contact-item a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    .contact-item a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+    }
+
+    section {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .section-title {
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding-bottom: 6px;
+      border-bottom: 2px solid #dbeafe;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .section-content {
+      color: var(--text-muted);
+      font-size: 14px;
+      text-align: justify;
+    }
+
+    .entry {
+      margin-bottom: 14px;
+    }
+
+    .entry:last-child {
+      margin-bottom: 0;
+    }
+
+    .entry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 4px;
+    }
+
+    .entry-title {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text-main);
+    }
+
+    .entry-date {
+      font-size: 13px;
+      color: #6b7280;
+      font-style: italic;
+    }
+
+    .entry-subtitle {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--secondary);
+      margin-bottom: 6px;
+    }
+
+    ul.bullets {
+      list-style-type: disc;
+      padding-left: 20px;
+      font-size: 14px;
+      color: var(--text-muted);
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 12px 20px;
+    }
+
+    .skill-card {
+      background: var(--primary-light);
+      padding: 10px 14px;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    .skill-card strong {
+      color: var(--primary);
+      display: inline-block;
+      margin-bottom: 2px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #e0f2fe;
+      color: #0369a1;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 12px;
+      font-weight: 500;
+      margin-right: 4px;
+      margin-top: 4px;
+    }
+
+    @media print {
+      body {
+        padding: 0;
+        background: transparent;
+      }
+      .cv-container {
+        border: none;
+        box-shadow: none;
+        width: 100%;
+        max-width: 100%;
+      }
+      header {
+        padding: 24px 20px 18px;
+      }
+      main {
+        padding: 20px;
+        gap: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cv-container">
+    <header>
+      <div class="header-name">Vũ Anh Đào</div>
+      <div class="header-role">Sinh viên năm cuối Công nghệ Thông tin | Thực tập sinh / Junior Developer</div>
+      <div class="contact-grid">
+        <div class="contact-item">
+          <span>📞</span>
+          <a href="tel:0865006212">0865 006 212</a>
+        </div>
+        <div class="contact-item">
+          <span>✉️</span>
+          <a href="mailto:vuanhdao.work@gmail.com">vuanhdao.work@gmail.com</a>
+        </div>
+        <div class="contact-item">
+          <span>📍</span>
+          <span>Hà Nội, Việt Nam</span>
+        </div>
+        <div class="contact-item">
+          <span>🌐</span>
+          <a href="https://github.com/vuanhdao" target="_blank">github.com/vuanhdao</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Mục tiêu nghề nghiệp -->
+      <section>
+        <h2 class="section-title">Mục tiêu nghề nghiệp</h2>
+        <div class="section-content">
+          Sinh viên năm cuối ngành Công nghệ Thông tin với GPA 3.49/4.0, có nền tảng vững vàng về cấu trúc dữ liệu, giải thuật, cơ sở dữ liệu và phát triển ứng dụng web/phần mềm. Đam mê học hỏi công nghệ mới, tư duy giải quyết vấn đề linh hoạt và tinh thần trách nhiệm cao. Mong muốn tìm kiếm cơ hội thực tập hoặc vị trí Fresher để áp dụng kiến thức học thuật vào các bài toán thực tế của doanh nghiệp, đồng thời nâng cao trình độ chuyên môn để đóng góp hiệu quả vào sản phẩm của đội ngũ.
+        </div>
+      </section>
+
+      <!-- Học vấn -->
+      <section>
+        <h2 class="section-title">Học vấn</h2>
+        <div class="entry">
+          <div class="entry-header">
+            <span class="entry-title">Trường Đại học [Tên trường của bạn]</span>
+            <span class="entry-date">2023 – 2027 (Dự kiến)</span>
+          </div>
+          <div class="entry-subtitle">Chuyên ngành: Công nghệ Thông tin</div>
+          <ul class="bullets">
+            <li><strong>Điểm trung bình (GPA):</strong> 3.49 / 4.0</li>
+            <li><strong>Môn học tiêu biểu:</strong> Cấu trúc dữ liệu & Giải thuật, Cơ sở dữ liệu, Lập trình hướng đối tượng (OOP), Mạng máy tính, Phát triển ứng dụng Web.</li>
+            <li>Học lực: Giỏi.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Kỹ năng chuyên môn -->
+      <section>
+        <h2 class="section-title">Kỹ năng chuyên môn</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <strong>Ngôn ngữ lập trình:</strong>
+            <p>Java, C++, JavaScript / TypeScript, Python cơ bản</p>
+          </div>
+          <div class="skill-card">
+            <strong>Web & Frameworks:</strong>
+            <p>HTML5, CSS3, ReactJS, Node.js (Express), Spring Boot cơ bản</p>
+          </div>
+          <div class="skill-card">
+            <strong>Cơ sở dữ liệu:</strong>
+            <p>MySQL, PostgreSQL, MongoDB, kỹ năng thiết kế ERD & tối ưu truy vấn</p>
+          </div>
+          <div class="skill-card">
+            <strong>Công cụ & Khác:</strong>
+            <p>Git/GitHub, Postman, VS Code, hiểu biết quy trình Scrum/Agile</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Dự án nổi bật -->
+      <section>
+        <h2 class="section-title">Dự án tiêu biểu</h2>
+        
+        <div class="entry">
+          <div class="entry-header">
+            <span class="entry-title">Website Quản Lý Công Việc Cá Nhân (Task Management App)</span>
+            <span class="entry-date">03/2026 – 06/2026</span>
+          </div>
+          <div class="entry-subtitle">Full-stack Developer | Dự án cá nhân</div>
+          <div style="margin-bottom: 6px;">
+            <span class="tag">ReactJS</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">Express</span>
+            <span class="tag">MongoDB</span>
+            <span class="tag">Tailwind CSS</span>
+          </div>
+          <ul class="bullets">
+            <li>Xây dựng ứng dụng quản lý tác vụ cá nhân hỗ trợ đăng ký/đăng nhập an toàn (JWT & bcrypt).</li>
+            <li>Phát triển các tính năng CRUD cho task: lọc theo mức độ ưu tiên, danh mục và hạn chót hoàn thành.</li>
+            <li>Thiết kế giao diện responsive thân thiện, hỗ trợ kéo thả trạng thái công việc (Kanban board).</li>
+            <li>Triển khai mã nguồn qua GitHub và deploy thành công trên nền tảng đám mây.</li>
+          </ul>
+        </div>
+
+        <div class="entry">
+          <div class="entry-header">
+            <span class="entry-title">Hệ Thống Đặt Sách Trực Tuyến (Bookstore E-Commerce)</span>
+            <span class="entry-date">09/2025 – 12/2025</span>
+          </div>
+          <div class="entry-subtitle">Backend Developer | Đồ án môn học (Nhóm 3 thành viên)</div>
+          <div style="margin-bottom: 6px;">
+            <span class="tag">Java</span>
+            <span class="tag">Spring Boot</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">RESTful API</span>
+          </div>
+          <ul class="bullets">
+            <li>Thiết kế lược đồ cơ sở dữ liệu quan hệ cho danh mục sách, giỏ hàng, đơn hàng và tài khoản người dùng.</li>
+            <li>Xây dựng RESTful API xử lý các nghiệp vụ: đặt hàng, quản lý kho hàng và phân quyền Admin/Khách hàng.</li>
+            <li>Kiểm thử API với Postman và viết unit test cho các service nghiệp vụ trọng yếu.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Hoạt động & Chứng chỉ -->
+      <section>
+        <h2 class="section-title">Hoạt động & Ngoại ngữ</h2>
+        <div class="entry">
+          <div class="entry-header">
+            <span class="entry-title">Thành viên Ban Kỹ thuật – CLB Tin học Sinh viên</span>
+            <span class="entry-date">2024 – 2025</span>
+          </div>
+          <ul class="bullets">
+            <li>Tham gia tổ chức các buổi chia sẻ chuyên đề thuật toán và hỗ trợ sinh viên khóa dưới làm quen với lập trình.</li>
+            <li>Hỗ trợ công tác kỹ thuật cho các cuộc thi Hackathon nội bộ tại trường.</li>
+          </ul>
+        </div>
+        <div class="entry" style="margin-top: 10px;">
+          <div class="entry-subtitle" style="color: var(--text-main); font-weight: 600;">Ngoại ngữ & Kỹ năng bổ trợ:</div>
+          <ul class="bullets">
+            <li>Tiếng Anh: Đọc hiểu tài liệu kỹ thuật, nghiên cứu API documentation và tài liệu chuyên ngành tốt.</li>
+            <li>Kỹ năng mềm: Giao tiếp, làm việc nhóm, tư duy phân tích và chủ động trong công việc.</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </div>
+
+</body>
+</html>
